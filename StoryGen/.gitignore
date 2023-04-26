@@ -2,3 +2,6 @@ Stories/
 created_images/
 pycache/
 .idea/
+StoryGenSN.egg-info/
+dist/
+build/
