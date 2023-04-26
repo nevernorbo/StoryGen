@@ -1,10 +1,19 @@
-# StoryGen
-Python a gyakorlatban beadando, 2023 tavasz
+Metadata-Version: 2.1
+Name: StoryGenSN
+Version: 1.0.0
+Summary: A Python package for Story generation using the ChatGPT API and OpenAI image creation tools
+Home-page: https://github.com/SNorebo/StoryGen
+Author: Sári Norbert
+Author-email: h164903@stud.u-szeged.hu
+Description-Content-Type: text/markdown
 
-## Pylint eredmeny (pylint StoryGen/*.py):
+# StoryGen
+Python a gyakorlatban beadandÃ³, 2023 tavasz
+
+## Pylint eredmÃ©ny (pylint StoryGen/*.py):
 <code>Your code has been rated at 6.88/10</code>
 
-## Flake8 eredmeny (flake8 .):
+## Flake8 eredmÃ©ny (flake8 .):
 <code>.\StoryGen\app.py:3:1: F403 'from home_frame import *' used; unable to detect undefined names
 .\StoryGen\app.py:4:1: F403 'from previous_generations_frame import *' used; unable to detect undefined names
 .\StoryGen\app.py:5:1: F403 'from key_frame import *' used; unable to detect undefined names

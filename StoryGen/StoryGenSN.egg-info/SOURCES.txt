@@ -1,0 +1,6 @@
+setup.py
+StoryGenSN.egg-info/PKG-INFO
+StoryGenSN.egg-info/SOURCES.txt
+StoryGenSN.egg-info/dependency_links.txt
+StoryGenSN.egg-info/requires.txt
+StoryGenSN.egg-info/top_level.txt
