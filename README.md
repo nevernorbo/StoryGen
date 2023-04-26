@@ -1,6 +1,8 @@
 # StoryGen
 Python a gyakorlatban beadando, 2023 tavasz
 
+A program belépési pontja az app.py file, kérlek ezt futtasd a használathoz.
+
 ## Pylint eredmeny (pylint StoryGen/*.py):
 <code>Your code has been rated at 6.88/10</code>
 
