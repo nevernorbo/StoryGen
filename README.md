@@ -2,13 +2,10 @@
 Python a gyakorlatban beadandó, 2023 tavasz
 
 ## Pylint eredmény (pylint StoryGen/*.py):
-<code>
-Your code has been rated at 6.88/10
-</code>
+<code>Your code has been rated at 6.88/10</code>
 
 ## Flake8 eredmény (flake8 .):
-<code>
-.\StoryGen\app.py:3:1: F403 'from home_frame import *' used; unable to detect undefined names
+<code>.\StoryGen\app.py:3:1: F403 'from home_frame import *' used; unable to detect undefined names
 .\StoryGen\app.py:4:1: F403 'from previous_generations_frame import *' used; unable to detect undefined names
 .\StoryGen\app.py:5:1: F403 'from key_frame import *' used; unable to detect undefined names
 .\StoryGen\app.py:6:1: F403 'from navigation_frame import *' used; unable to detect undefined names
@@ -49,5 +46,4 @@ Your code has been rated at 6.88/10
 .\StoryGen\previous_generations_frame.py:96:80: E501 line too long (82 > 79 characters)
 .\StoryGen\test.py:24:13: F841 local variable 'response' is assigned to but never used
 .\StoryGen\test.py:30:80: E501 line too long (83 > 79 characters)
-.\StoryGen\test.py:44:80: E501 line too long (88 > 79 characters)
-</code>
+.\StoryGen\test.py:44:80: E501 line too long (88 > 79 characters)</code>
