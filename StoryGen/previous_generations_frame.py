@@ -18,16 +18,7 @@ class PreviousGenerationsFrame(customtkinter.CTkFrame):
             height=50,
             font=customtkinter.CTkFont(size=16),
         )
-        if not self.stories_exist():
-            self.no_stories_yet.place(relx=0.5, rely=0.3, anchor="center")
-            return
-        else:
-            self.no_stories_yet.destroy()
-
-        self.stories_frame = customtkinter.CTkScrollableFrame(self)
-        self.stories_frame.grid(row=0, column=0, padx=20, pady=20, sticky="nsew")
-        self.stories_frame.columnconfigure(0, weight=1)
-
+        
         self.refresh_button = customtkinter.CTkButton(
             master=self,
             text="Refresh stories!",
@@ -37,7 +28,17 @@ class PreviousGenerationsFrame(customtkinter.CTkFrame):
             corner_radius=20,
             font=customtkinter.CTkFont(size=16),
         )
+        
         self.refresh_button.grid(row=1, column=0, pady=(0, 10), sticky="s")
+        if not self.stories_exist():
+            self.no_stories_yet.place(relx=0.5, rely=0.3, anchor="center")
+            return
+        else:
+            self.no_stories_yet.destroy()
+
+        self.stories_frame = customtkinter.CTkScrollableFrame(self)
+        self.stories_frame.grid(row=0, column=0, padx=20, pady=20, sticky="nsew")
+        self.stories_frame.columnconfigure(0, weight=1)
 
     def stories_exist(self):
         current_dir = os.path.dirname(os.path.relpath(__file__))
@@ -54,6 +55,9 @@ class PreviousGenerationsFrame(customtkinter.CTkFrame):
         stories_dir = os.path.join(current_dir, "Stories")
         file_path = os.path.join(stories_dir, "stories.json")
 
+        if not os.path.exists(file_path):
+            return
+        
         # read data from stories.json
         with open(file_path, "r") as f:
             data = json.load(f)
